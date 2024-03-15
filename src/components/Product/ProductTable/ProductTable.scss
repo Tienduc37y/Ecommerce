@@ -1,0 +1,37 @@
+.cart-table{
+    .product{
+        .info{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .thumbnail{
+                width: 100px;
+                height: 100px;
+            }
+            h3{
+                color: black;
+            }
+        }
+        .price, .money{
+            color: red;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .old-price{
+            text-decoration: line-through;
+            font-size: 14px;
+        }
+    }
+    .anticon{
+        font-size: 20px;
+    }
+}
+
+.sumary{
+    padding: 20px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    position: sticky;
+    bottom: 0;
+    gap: 20px;
+}

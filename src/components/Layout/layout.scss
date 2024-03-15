@@ -1,0 +1,48 @@
+@import '@/variable'; 
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.hide-on-mobile{
+    display: block;
+}
+
+.show-on-mobile{
+    display: none;
+}
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.content{
+    padding: 50px;    
+    min-height: 100vh;
+}
+
+.footer{
+    background: white;
+}
+
+
+// === phone down
+@media only screen and (max-width: $sm) {
+    .show-on-mobile{
+        display: block;
+    }
+    .hide-on-mobile{
+        display: none;
+    }
+    .header{
+        padding: 0 10px;
+    }
+    .content{
+        padding: 20px 0;
+    }
+}

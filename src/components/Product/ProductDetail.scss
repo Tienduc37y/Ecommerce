@@ -1,0 +1,65 @@
+@import '@/variable';
+.product{
+    margin: 0 !important;
+    .ant-col{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .title{
+        margin: 15px 0;
+        font-size: 2rem;
+        color: #bf081f;
+    }
+    .info{
+        &>div{
+            margin: 10px 0;
+        }
+        .old-price, .price{
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+    
+        .price{
+            color: #bf081f;
+            margin-left: 10px;
+        }
+    
+        .old-price{
+            text-decoration: line-through;
+            font-size: 1rem;
+        }
+    
+        .saving-money{
+            color: #bf081f;
+            margin-left: 10px;
+        }
+    
+        .label-field{
+            font-weight: bold;
+        }
+        .categories-link{
+            a{
+                margin: 3px 10px;
+            }
+        }
+    }
+    .content-body{
+        margin: 30px 0;
+        h1{
+            margin: 10px 0;
+        }
+        img{
+            width: 100%;
+            margin: 10px 0;
+        }
+    }
+}
+
+// === phone down
+@media only screen and (max-width: $sm) {
+    .product{
+        .title{
+            font-size: 1.3rem;
+        }
+    }
+}

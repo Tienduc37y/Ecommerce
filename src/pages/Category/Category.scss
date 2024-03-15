@@ -1,0 +1,29 @@
+.search-result{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    h1{
+        color: red;
+        margin-left: 20px;
+    }
+}
+
+.category-wrapper{
+    h1, .sort-price, button{
+        margin: 10px 0;
+    }
+
+    .categories-list{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 15px;
+
+        a{
+            padding: 8px;
+            width: 100%;
+            background: rgb(34, 85, 139);
+            color: white;
+            border-radius: 10px;
+        }
+    }
+}
